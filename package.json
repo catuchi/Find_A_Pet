@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/catuchi/Find_A_Pet#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.10",
     "parcel": "^2.7.0"
   },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "fetch-jsonp": "^1.2.1"
   }
 }
