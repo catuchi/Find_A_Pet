@@ -1,0 +1,27 @@
+{
+  "name": "find_a_pet",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catuchi/Find_A_Pet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catuchi/Find_A_Pet/issues"
+  },
+  "homepage": "https://github.com/catuchi/Find_A_Pet#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "fetch-jsonp": "^1.2.1"
+  }
+}
