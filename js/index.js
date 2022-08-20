@@ -1,8 +1,9 @@
-import fetchJsonp from "fetch-jsonp";
+// import fetchJsonp from "fetch-jsonp";
 import { isValidZip, showAlert } from "./validate";
 
+// visit petfinde.com to generate a new token
 const token =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ5TWkyUTVzdHBNV1ZBMFVvcFZ6ZzRnS1dLOThtR3EyM2NlVkNTbE84dERBbFhvVFBwTCIsImp0aSI6IjAyYTE4ZmIxNzE3M2NjMGY4ZjMyNDgzYWI1MzM2YjI4MmYyOGI1YWZhNjJjNmRjNTYzM2Y2ZTgyYjEwMzUyZTE4Y2I1NzRhNzEzZmY1MDEzIiwiaWF0IjoxNjYwOTUxMjU5LCJuYmYiOjE2NjA5NTEyNTksImV4cCI6MTY2MDk1NDg1OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.RWo6IDrsqhSuTxiXKvRN01bOFQUEoXV-cR2m2yznXNj0YWfBOroMQFKEjNQ0q6QzuZtWKZLfB5_0ChWBesLUYOs1KsWNcrh4eC8W0p7fW7mYFHKPxqa25MNVL8qBMEa4RQbpUOO1QgJnciqx-e79cEFr5T8hO-7K1KfbfYs-bsez6ZPSo6jyEBxX7foDKKRPNjg2qU0feQ0p38CeqoREiNRwEXtx_sadHoWQOHGe1cBG8Wu6CkQO75LCRxZxIIKjvVZPX5q-nFzbKYqOZ2HiA33mf3HhC154dqquoPrw2OONTX-zIT2mKMWHa1K578RoaArUiQKIIJ9z3CKV4r0hZg";
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ5TWkyUTVzdHBNV1ZBMFVvcFZ6ZzRnS1dLOThtR3EyM2NlVkNTbE84dERBbFhvVFBwTCIsImp0aSI6ImIwNzJiZGZiZmRiZDBhZDI0ZTk2MTU3NjUyMzA4NzgzYzY1Nzg5Y2ZlNTA4ZjE3ZWZhMjRmMjNlNDYzNzBkMmU3OWYxMTYyYTQ2ZDBmNGYwIiwiaWF0IjoxNjYwOTU0OTU3LCJuYmYiOjE2NjA5NTQ5NTcsImV4cCI6MTY2MDk1ODU1Nywic3ViIjoiIiwic2NvcGVzIjpbXX0.Cem6Lvthiipvey0RVg6Dn39NqUpb9kp1LEvjCxj5gajfzYIfWOlwvZCXYat5WZiBNLRI8Xgz_869_IxDqpksKXG99Ppt73fQiBslILUgZl_YgdMzkunrM22Hdo9km6W66OT6a4afuHB79JBmF_labLF9VjiF3y6qsFe34EOVvUJFktc99bHCcOyvbUJoGRyC0tU49b4WQnmIKuixVfy1wb7eeKYVD9fF0iU8MN6Ct8sJtMV6Hhu3Gs5_iQfAJk34tYjv0pc_x08t0H1DpqEtjUzVA6Eyce01GMXjj3G1vUVEeMZ1CJodu-S8BER70ZT-607r-gAAS1KJvqmeigBsjQ";
 
 const petForm = document
   .querySelector("#pet-form")
@@ -25,15 +26,6 @@ function fetchAnimals(e) {
   const url = `https://api.petfinder.com/v2/animals?type=${animal}&location=${zip}`;
 
   // fetch pets
-
-  // let headers = new Headers();
-
-  // headers.append("Content-Type", "application/json");
-  // headers.append(
-  //   "Authorization",
-  //   "Basic " + base64.encode(username + ":" + password)
-  // );
-  // headers.append("Origin", "http://localhost:3000");
 
   const options = {
     method: "GET",
