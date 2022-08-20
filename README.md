@@ -16,7 +16,7 @@ Visit [PetFinder](https://www.petfinder.com/developers/v2/docs/) to generate aut
 
 ## Demo
 
-This app is deployed on netlify. [App Demo](https://whimsical-cobbler-7797c5.netlify.app/)
+This app is deployed on netlify. [App Demo](https://tiny-paprenjak-f86da8.netlify.app/)
 
 ## Tech Stack
 
