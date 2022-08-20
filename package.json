@@ -5,7 +5,8 @@
   "default": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "parcel": "^2.7.0"
   },
   "dependencies": {
+    "@parcel/babel-preset-env": "^2.7.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "fetch-jsonp": "^1.2.1"
